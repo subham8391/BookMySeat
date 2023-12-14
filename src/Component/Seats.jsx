@@ -53,7 +53,7 @@ function Seats({ selectedQuantity, ticketType }) {
       const updatedBookedSeats = [...bookedSeats, ...selectedSeats];
       setBookedSeats(updatedBookedSeats);
       setSelectedSeats([]);
-
+  
       // Update local storage with the updated booked seats
       localStorage.setItem('bookedSeats', JSON.stringify(updatedBookedSeats));
   
